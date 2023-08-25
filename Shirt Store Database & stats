@@ -1,0 +1,22 @@
+#Creating and populating table with data and a couple simple queries of the table
+
+CREATE TABLE store (id Integer, item TEXT, color TEXT, InStock INTEGER, Fabric TEXT);
+
+INSERT into store VALUES(1,"T-Shirt","red",5,"Cotton");
+INSERT into store VALUES(2,"T-Shirt","orange",7,"Cotton");
+INSERT into store VALUES(3,"T-Shirt","yellow",3,"Blend");
+INSERT into store VALUES(4,"Long-sleeve shirt","Green",5,"Cotton");
+INSERT into store VALUES(5,"T-Shirt","Blue",6,"Cotton");
+INSERT into store VALUES(6,"Long-sleeve shirt","Indigo",2,"Cotton");
+INSERT into store VALUES(7,"Tank Top","Violet",9,"Blend");
+INSERT into store VALUES(8,"Tank Top","White",2,"Cotton");
+INSERT into store VALUES(9,"T-Shirt","Black",8,"Blend");
+INSERT into store VALUES(10,"V-neck Tee","Black",4,"Cotton");
+INSERT into store VALUES(11,"V-neck Tee","red",3,"Cotton");
+INSERT into store VALUES(12,"V-neck Tee","orange",4,"Cotton");
+INSERT into store VALUES(13,"V-neck Tee","blue",5,"Cotton");
+INSERT into store VALUES(14,"V-neck Tee","White",1,"Cotton");
+INSERT into store VALUES(15,"Vintage Tee","White",3,"Blend");
+
+SELECT * from store;
+SELECT  MAX(InStock) from store;
